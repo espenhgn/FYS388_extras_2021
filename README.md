@@ -8,8 +8,6 @@ Some tools needed for the course exercises are not so straightforward to set up 
 But they can be used by creating a virtual Linux installation running via Docker (https://www.docker.com).
 So start by installing the Docker client on your computer.
 
-Then you can
-
 
 ## NEURON/LFPY docker image for exercises
 
