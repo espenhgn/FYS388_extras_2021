@@ -36,8 +36,8 @@ when the container is running.
 Jupyter notebook servers running from within the
 container can be accessed after invoking them by issuing:
 
-    $ cd /opt/
-    $ jupyter notebook --ip 0.0.0.0 --port=5000 --no-browser --allow-root
+    cd /opt/
+    jupyter notebook --ip 0.0.0.0 --port=5000 --no-browser --allow-root
 
 
 and opening the resulting URL in a browser on the host computer, similar to:
@@ -49,3 +49,9 @@ http://127.0.0.1:5000/?token=a2acca08271c33f720f2b88a2328f5be083590fb4aa85816
 This should be straightforward.
 Follow the instructions at:
 https://nest-desktop.readthedocs.io/en/stable/user/setup.html#via-docker-compose-linux-windows-apple
+
+### pyNEST + Jupyter notebooks
+If you want to run (py)NEST in a Jupyter notebook and mount the local file system (for reading/writing files), this is then possible by issuing:
+
+    docker run --mount type=bind,source="$(pwd)",target=/opt/data -it -p 5000:5000 nestsim/nest:3.1 bash
+    jupyter notebook --ip 0.0.0.0 --port=5000 --no-browser --allow-root
