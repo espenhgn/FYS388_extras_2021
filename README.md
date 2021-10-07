@@ -33,6 +33,8 @@ Try mounting a  source directory  with exercise notebooks (by setting ``source="
 Various files can then be found in the folder ``/opt/<exercises>``
 when the container is running.
 
+Note that the command ``$(pwd)`` do not work on Windows, so you may have to provide a full path such as ``C:\Users\<whatever>\``. 
+
 Jupyter notebook servers running from within the
 container can be accessed after invoking them by issuing:
 
