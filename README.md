@@ -57,3 +57,8 @@ If you want to run (py)NEST in a Jupyter notebook and mount the local file syste
 
     docker run --mount type=bind,source="$(pwd)",target=/opt/data -it -p 5000:5000 nestsim/nest:3.1 bash
     jupyter notebook --ip 0.0.0.0 --port=5000 --no-browser --allow-root
+
+
+Note that specific NEST Docker image versions (NEST Desktop may install NEST v3.0 while exercises may require NEST v3.1) may be fetched using the command:
+
+    docker pull nestsim/nest:<version>
