@@ -66,7 +66,7 @@ Note that specific NEST Docker image versions (NEST Desktop may install NEST v3.
     docker pull nestsim/nest:<version>
 
 
-# Removing 
+# Removing images
 
 If the images and containers are no longer needed, they can be removed. See info at https://docs.docker.com/engine/reference/commandline/rm/. 
     
