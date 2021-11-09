@@ -54,6 +54,14 @@ https://nest-desktop.readthedocs.io/en/stable/user/setup.html#via-docker-compose
 
 Note that for Windows ``wget`` and ``sudo`` are not valid commands. Just download the file ``docker-compose.yml`` file manually and run docker in the Command Prompt as Administrator. 
 
+In case you ran through these steps, you have the nestdesktop app and can invoke at a later point by issuing
+
+    docker run -it -p 5000:5000 nestdesktop/app 
+
+
+and open http://localhost:8000 in your favourite browser. 
+
+
 ### pyNEST + Jupyter notebooks
 If you want to run (py)NEST in a Jupyter notebook and mount the local file system (for reading/writing files), this is then possible by issuing:
 
