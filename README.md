@@ -64,3 +64,9 @@ If you want to run (py)NEST in a Jupyter notebook and mount the local file syste
 Note that specific NEST Docker image versions (NEST Desktop may install NEST v3.0 while exercises may require NEST v3.1) may be fetched using the command:
 
     docker pull nestsim/nest:<version>
+
+
+# Removing 
+
+If the images and containers are no longer needed, they can be removed. See info at https://docs.docker.com/engine/reference/commandline/rm/. 
+    
